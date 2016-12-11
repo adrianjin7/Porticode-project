@@ -6,6 +6,8 @@ function validateForm() {
     } 
 }
 
+var linklist = document.createDocumentFragment();
+
 var myForm = document.querySelector("#submit");
 myForm.addEventListener("click", function(e){
     e.preventDefault();
@@ -16,11 +18,12 @@ myForm.addEventListener("click", function(e){
     
     const part2 = "?apiKey=prtl6749387986743898559646983194";
     var res = part1.concat(dest, "/", dateOut, part2);
-    console.log(res);
+    var y = document.getElementById("links");
+    var z = document.createElement('li');
+    z.innerHTML= "Link: " + res;
+    y.appendChild(z);
     
 });
-
-
 
 
 
