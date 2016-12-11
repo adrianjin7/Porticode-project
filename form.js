@@ -12,8 +12,3 @@ function validateForm() {
 
 
 prompt("?");
-
-function changeTextOne(){
-    document.getElementById('boldStuff').innerHTML = city;
-}
-changeTextOne();
