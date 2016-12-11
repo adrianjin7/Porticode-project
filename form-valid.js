@@ -1,5 +1,3 @@
-alert("HEEEY");
-
 function validateForm() {
     var x = document.forms["myForm"]["city"];
     if (x.value == "") {
@@ -8,5 +6,3 @@ function validateForm() {
     }
 }
 
-
-prompt("?");
