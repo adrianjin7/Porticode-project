@@ -51,7 +51,7 @@
         </select>
 
         <label for="inputCity" class="sr-only">City</label>
-        <input type="text" id="inputCity" name="city" class="form-control" placeholder="Airport Code" required data-error-message="You have to write where are you going">
+        <input type="text" id="inputCity" name="city" class="form-control" value="JFK" required data-error-message="You have to write where are you going">
         <label for="inputDate" class="sr-only">Date</label>
         <input type="Date" id="inputDate" class="form-control" placeholder="Date" required autofocus="" data-error-message="You have to write when are you flying">
 
@@ -61,7 +61,7 @@
             <input type="checkbox" value="Remember my choice"> Remember my choice.
           </label>
         </div>
-        <input id="submit" class="btn btn-lg btn-primary btn-block" type="submit" onclick="showDiv('newyorkcontent')"></input>
+        <input id="submit" class="btn btn-lg btn-primary btn-block" type="submit"></input>
 
 
 
@@ -69,20 +69,24 @@
     </form>
     </div>
 
-    <div id="woz-content newyorkcontent" style="display:none">
+    <div id="woz-content" style="display:none">
+      
       <div class="container">
-        <h2 class="form-signin-heading">Have a great time in New York!<div id="boldStuff"></div></h2>
+        <h2 class="form-signin-heading">Have a great time!<div id="boldStuff"></div></h2>
       </div>
       <br></br>
       <div class="container">
           <div class="container" id="flightresults">
             <h2 class="form-signin-heading">Available Flights</h2>
+          <ol id="links">
+            
+          </ol>
           </div>
           <br></br><br></br>
           <div class="col-md-6 portfolio-item">
             <div id="music">
               <h3>Some Suitable Tunes</h3>
-              <iframe src="https://spotifycharts.com/regional/us/daily/latest" width="400" height="400" frameborder="0" allowtransparency="true"></iframe>
+              <iframe src="https://spotifycharts.com/regional" width="400" height="400" frameborder="0" allowtransparency="true"></iframe>
 
               <!--This shows the regional top tracks for this city! -->
 
@@ -91,17 +95,18 @@
 
           <div class="col-md-6 portfolio-item">
             <div id="twitter">
-              <h3>A sample of #NewYork</h3>
-              <a class="twitter-timeline" data-width="400" data-height="450" href="https://twitter.com/hashtag/NewYork" data-widget-id="807826059404201984">#NewYork Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
+              <a id="twitter" class="twitter-timeline"  href="https://twitter.com/hashtag/news" data-widget-id="807893939776798720">#news Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <h3>A Sample of</h3>
+              <ol id="twitlink">
+                
+              </ol>
             </div>
           </div>
 
           <div class="col-md-6 portfolio-item">
-            <div id="twitter">
-              <h3>NY Forecast</h3>
+            <div id="twitter_forecast">
+              <h3> Weather Forecast</h3>
               <a class="twitter-timeline" data-width="400" data-height="450" href="https://twitter.com/NYForecast">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>

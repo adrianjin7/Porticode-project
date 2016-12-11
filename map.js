@@ -1,8 +1,6 @@
 var geocoder;
 var map;
-//var dest = document.getElementById("inputCity").value;//
-//var country = document.getElementById("inputCountry").value;
-//var address = dest.concat(" " + country);
+
 
 function initialize() {
   geocoder = new google.maps.Geocoder();
@@ -28,7 +26,7 @@ function initialize() {
           map.setCenter(results[0].geometry.location);
 
           var infowindow = new google.maps.InfoWindow({
-            content: '<b>' + address + '</b>',
+            content: '<b>' + latlng + '</b>',
             size: new google.maps.Size(150, 50)
           });
 

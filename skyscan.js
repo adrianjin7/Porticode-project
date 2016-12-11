@@ -23,10 +23,17 @@ myForm.addEventListener("click", function(e){
     z.innerHTML= "Link: " + res;
     y.appendChild(z);
     
+    document.getElementById("woz-content").style.display = "block";
+    
+    
     var mapdest = document.getElementById("inputCity").value;
     var mapcountry = document.getElementById("country").value;
-    document.querySelector(".twitter-timeline").href = "https://twitter.com/hashtag/" + dest;
     
+    var t = document.querySelector("#twitter");
+    t.href = "https://twitter.com/hashtag/" + dest
+    var z = document.createElement('li');
+    z.innerHTML= "Link: " + t.href;
+    document.querySelector("#twitlink").appendChild(z)
 });
     
     
