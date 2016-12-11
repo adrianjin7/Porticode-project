@@ -14,11 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="bootstrap-3.3.7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,9 +25,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-     <script type="text/javascript" src="weather.js"></script>
-     <!--i have no idea if this will work-->
-     <link href="extra.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+     <script type="text/javascript" src="simpleWeather.js"></script>
 
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.7-dist/css/2-col-portfolio.css" rel="stylesheet">
@@ -43,7 +38,7 @@
   <div class="container">
     <h2 class="form-signin-heading">Have a great time in <div id="boldStuff"></div></h2>
   </div>
-  <br></br><br></br><br></br>
+  <br></br>
   <div class="container">
       <div class="container" id="flightresults">
         <h2 class="form-signin-heading">Available Flight</h2>
@@ -51,13 +46,14 @@
       <br></br><br></br>
       <div class="col-md-6 portfolio-item">
         <div id="music">
-          <h3>Most popular song</h3>
-          
+          <h3>Some Suitable Tunes</h3>
+
         </div>
       </div>
       <div class="col-md-6 portfolio-item">
         <div id="weatherresults">
           <h3>Current weather</h3>
+          <p><div id="weather"></div></p>
         </div>
       </div>
 
