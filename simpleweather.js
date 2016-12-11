@@ -1,8 +1,9 @@
 $(document).ready(function() {
-  $.simpleWeather({
-    location: "Paris", "France"
-    woeid: '',
-    unit: 'c',
+  var simpleWeather = {
+    "locacity": 'Austin',
+    "locacountry": 'USA',
+    "woeid": '',
+    "unit": 'c',
     success: function(weather) {
       html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
 
@@ -11,5 +12,5 @@ $(document).ready(function() {
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
-  });
+  };
 });
