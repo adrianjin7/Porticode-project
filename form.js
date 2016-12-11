@@ -1,7 +1,9 @@
+
 alert("HEEEY");
 
 function validateForm() {
     var x = document.forms["myForm"]["city"];
+
     if (x.value == "") {
         alert("You have to fill this field");
         return false;
@@ -10,3 +12,8 @@ function validateForm() {
 
 
 prompt("?");
+
+function changeTextOne(){
+    document.getElementById('boldStuff').innerHTML = city;
+}
+changeTextOne();
