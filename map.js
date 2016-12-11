@@ -2,7 +2,7 @@ var geocoder;
 var map;
 var dest = document.getElementById("inputCity").value;
 var country = document.getElementById("inputCountry").value;
-var address = dest.concat(country);
+var address = dest.concat(" " + country);
 
 function initialize() {
   geocoder = new google.maps.Geocoder();
@@ -50,3 +50,4 @@ function initialize() {
   }
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+    
